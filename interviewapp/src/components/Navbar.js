@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom"
 import styles from './Navbar.module.css'
 
 
@@ -8,10 +9,10 @@ function Navbar() {
        <div className={styles.navbarLeft}>LEWA</div>
        <div className={styles.navbarRight}>
 <ul className={styles.viewList}>
-    <li><a href="/view1">WIDOK 1</a></li>
-    <li><a href="/view2">WIDOK 2</a></li>
-    <li><a href="/view3">WIDOK 3</a></li>
-    <li><a href="/view4">WIDOK 4</a></li>
+    <li><Link to="/view1">WIDOK 1</Link></li>
+    <li><Link to="/view2">WIDOK 2</Link></li>
+    <li><Link to="/view3">WIDOK 3</Link></li>
+    <li><Link to="/view4">WIDOK 4</Link></li>
 
 </ul>
        </div>
