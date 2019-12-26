@@ -4,15 +4,18 @@ import {
   Route,
   Switch
 } from "react-router-dom";
+import Navbar from './components/Navbar'
 import View1 from "./screens/View1";
 import View2 from "./screens/View2";
 import View3 from "./screens/View3";
 import View4 from "./screens/View4";
 
+
 const App = () => {
   return (
     <Router>
-        <main className="main">
+      <Navbar/>
+      
         <Switch>
           <Route strict exact path="/view1" component={View1}/>
           <Route strict exact path="/view2" component={View2}/>
@@ -21,7 +24,7 @@ const App = () => {
           <Route strict exact path="/" component={View1}/>
           <Route component={() => <h1>Nie ma takiej strony</h1>} />
         </Switch>
-        </main>
+  
     </Router>
   );
 };

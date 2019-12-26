@@ -1,9 +1,12 @@
 import React from 'react';
+import styles from './View4.module.css'
 
 
 function View4() {
   return (
-   <div>WIDOK NR 4</div>
+    <div className={styles.mainDiv4}>
+      <h1>WIDOK 4</h1>
+       </div>
   );
 }
 

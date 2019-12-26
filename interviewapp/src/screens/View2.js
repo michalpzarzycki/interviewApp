@@ -1,9 +1,12 @@
 import React from 'react';
+import styles from './View2.module.css'
 
 
 function View2() {
   return (
-   <div>WIDOK NR 2</div>
+   <div className={styles.mainDiv2}>
+      <h1>WIDOK 2</h1>
+       </div>
   );
 }
 
